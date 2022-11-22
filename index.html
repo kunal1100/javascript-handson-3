@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align:center ;">Javascript handson 3</h1>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 1.</p>
+    <p style="font-size: 20px;">
+        Find the number of digits <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Find_Digits = (N) => 
+    {
+        var count = 0 ;
+        while(N > 0){
+        N=Math.floor(N/10);
+        count++;
+        }
+        return count;
+    };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 2.</p>
+    <p style="font-size: 20px;">
+        Find the Fives. <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+        const Find_Five = (N) => 
+        {
+             var find=0;
+            while(N>0){
+              if(N%10===5){
+                find++;
+              }
+              N=Math.floor(N/10);
+            }
+              return find;
+        };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 3.</p>
+    <p style="font-size: 20px;">
+        Find Sum <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+        const findSum = (n) => {
+            var sum = 0;
+              var number=0;
+              for(let i =0;i<=n;i++){
+                if(i%2===0){
+                 sum +=i;
+                }
+              }
+              return sum;
+          };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 4.</p>
+    <p style="font-size: 20px;">
+        Find the sum of the digits of a given number. <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Number_Sum = (N) => 
+    {
+	var sum = 0;
+    while (N != 0) {
+        sum = sum + N % 10;
+        N = parseInt(N / 10);
+    }
+    return sum;
+    };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 5.</p>
+    <p style="font-size: 20px;">
+        Print the Odds. <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+        const Print_Odd = (N) => 
+        {
+             for(i=2;i<=N;i++){
+               if(i===2){
+                 console.log(i);
+               }
+               else if(i%2!==0)
+               console.log(i);
+            }
+        };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 6.</p>
+    <p style="font-size: 20px;">
+        Print the Pattern. <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+    const Print_pattern = (N) => 
+    {
+  var pattern="";
+    for(let i=1; i <= N ; i++){
+    pattern+="*";
+    console.log(pattern);
+    }
+    }
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 7.</p>
+    <p style="font-size: 20px;">
+        Check whether a Number is a prime or not. <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+        var flag=true;
+        if(N<=1){return "NO";}
+        else if(N>1){
+            for(var i=2;i<=N-1;i++){
+                if(N%i===0){
+                flag=false;
+                break;
+                }
+            }
+        }
+        if(flag===true)
+        return "YES";
+        else
+        return "NO";
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 8.</p>
+    <p style="font-size: 20px;">
+        Print Numbers <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+        const printNumbers = (n) => {
+            for(let num=1; num<=n; num++){
+              console.log(num)
+            }
+        };
+    </pre>
+    <br>
+
+    <p style="font-size: 20px; font-weight:bold">Question 9.</p>
+    <p style="font-size: 20px;">
+        Print the Table <br>
+    </p>
+    <p style="color:cornflowerblue; font-size: 20px;">
+        Solution -
+    </p>
+    <pre style="color:cornflowerblue; font-size: 20px;">
+        const Print_Table = (N) => 
+    {
+	for(let num=1; num<=10; num++){
+	  console.log(`${N} * ${num} = ${N*num}`)
+	}
+    };
+    </pre>
+    <br>
+</body>
+</html>
